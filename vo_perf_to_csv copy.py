@@ -31,7 +31,7 @@ new_performance_data = fetch_and_filter_data(url, operator_ids)
 # Append the new performance data to the existing data
 today = datetime.now().strftime("%Y-%m-%d")
 header = existing_data[0]
-header.append(today)
+header.append(today + " 24h Operator Performance")
 
 for row in existing_data[1:]:
     operator_id = int(row[0])
